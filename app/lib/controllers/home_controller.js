@@ -48,6 +48,7 @@ HomeController = RouteController.extend({
     },
     onAfterAction: function() {},
     onStop: function() {},
+
     accessDenied: function() {
         this.render('AccessDenied', {});
     }

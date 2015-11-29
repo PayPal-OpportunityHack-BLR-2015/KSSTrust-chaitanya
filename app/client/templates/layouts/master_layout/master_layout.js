@@ -80,3 +80,11 @@ Accounts.ui.config({
         }
     }]
 });
+
+Template.MasterLayout.events({
+    'click #login-buttons-logout': function (event) {
+        Router.go('home');
+        //add your custom logic on top of this
+       //the default behaviour should still happen from meteor
+    }
+});
